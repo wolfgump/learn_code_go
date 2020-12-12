@@ -1,0 +1,29 @@
+[[route]]
+id = "operation-gateway-admin"
+url = "operation-gateway-admin"
+matchpath = "^/api/operation-gateway-admin/"
+
+[[route.filters]]
+name = "Base"
+
+[[route.filters]]
+name = "PrefixStrip"
+[route.filters.param]
+parts = 2
+[[route.filters]]
+name = "LoadBalance"
+[[route.filters]]
+name = "RequestBackend"
+
+
+[[route]]
+id = "operation-web-server"
+url = "operation-web-server"
+matchpath = "^/api/operation-web-server/"
+
+[[route.filters]]
+name = "PrefixStrip"
+[route.filters.param]
+parts = 2
+
+

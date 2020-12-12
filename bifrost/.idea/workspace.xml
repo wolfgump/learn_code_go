@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e3e10a13-8ccf-4f92-91d2-4c5757c1dd15" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.14.5/libexec" />
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="ProjectId" id="1l8hCRmpuShUG96RoCx822qYFRn" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/route" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/core/route" />
+      <recent name="$PROJECT_DIR$/core/config" />
+      <recent name="$PROJECT_DIR$/core/filter" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build janus-server-go/main">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="bifrost" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="janus-server-go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build janus-server-go/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="bifrost" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/main/main.go" />
+      <package value="janus-server-go/main" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Chain_Sort in janus-server-go/core/filter" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="bifrost" />
+      <working_directory value="$PROJECT_DIR$/core/filter" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="janus-server-go/core/filter" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_Chain_Sort\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Parse_Route in janus-server-go/core/route" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="bifrost" />
+      <working_directory value="$PROJECT_DIR$/core/route" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="janus-server-go/core/route" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_Parse_Route\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Pre_Construct in janus-server-go/core/filter" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="bifrost" />
+      <working_directory value="$PROJECT_DIR$/core/filter" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="janus-server-go/core/filter" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_Pre_Construct\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Run in janus-server-go/core/filter" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="bifrost" />
+      <working_directory value="$PROJECT_DIR$/core/filter" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="janus-server-go/core/filter" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTest_Run\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="bifrost" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="janus-server-go" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build janus-server-go/main" />
+        <item itemvalue="Go Test.Test_Run in janus-server-go/core/filter" />
+        <item itemvalue="Go Test.Test_Pre_Construct in janus-server-go/core/filter" />
+        <item itemvalue="Go Test.Test_Chain_Sort in janus-server-go/core/filter" />
+        <item itemvalue="Go Test.Test_Parse_Route in janus-server-go/core/route" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="640" y="365" key="#Go_Modules" timestamp="1606985483670">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="640" y="365" key="#Go_Modules/0.0.1680.1050@0.0.1680.1050" timestamp="1606985483669" />
+    <state x="573" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607760568177">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="573" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1607760568177" />
+    <state x="603" y="235" key="#xdebugger.evaluate" timestamp="1607762718650">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="603" y="235" key="#xdebugger.evaluate/0.0.1680.1050@0.0.1680.1050" timestamp="1607762718650" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1607770333880">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1607770333880" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1607766604931" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1607770333879">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1607770333879" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1607766604930" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1607770333879">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1607770333879" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1607766604930" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1607770333880">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1607770333880" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1607766604931" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1607770333875">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1607770333875" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.23.1680.963@0.23.1680.963" timestamp="1607769660951" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center" timestamp="1607770333873">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1607770333873" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center/0.23.1680.963@0.23.1680.963" timestamp="1607769660950" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left" timestamp="1607770333872">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1607770333872" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left/0.23.1680.963@0.23.1680.963" timestamp="1607769660949" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right" timestamp="1607770333873">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1607770333873" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right/0.23.1680.963@0.23.1680.963" timestamp="1607769660950" />
+    <state x="341" y="164" key="SettingsEditor" timestamp="1607504689599">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="341" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1607504689599" />
+    <state x="538" y="280" width="604" height="490" key="find.popup" timestamp="1607767392942">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="538" y="280" width="604" height="490" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1607767392942" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1607766471203">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1607766471203" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../bifrost/core/config/config_parse_test.go</url>
+          <line>9</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../bifrost/core/route/route_test.go</url>
+          <line>12</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/../bifrost/core/filter/request_backend_filter.go</url>
+          <line>38</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="GoTestRunConfiguration">
+        <watch expression="*(*&quot;void&quot;)(0)" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

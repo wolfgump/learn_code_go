@@ -1,0 +1,33 @@
+[[route]]
+id = "operation-gateway-admin"
+url = "lb://operation-gateway-admin"
+mathPath = "^/api/operation-gateway-admin"
+
+[[route.filters]]
+name = "PrefixStrip"
+
+[route.filters.arg]
+maxAttempts = "3"
+minAttempts = "1"
+
+[[route.filters]]
+name = "PrefixStrip"
+
+[[route.filters]]
+name = "Base"
+
+[[route]]
+id = "operation-gateway-admin1"
+url = "lb://operation-gateway-admin1"
+mathPath = "^/api/operation-gateway-admin1"
+
+[[route.filters]]
+name = "PrefixStrip"
+
+[route.filters.arg]
+maxAttempts = "3"
+minAttempts = "1"
+
+[[filters]]
+name = "PrefixStrip"
+

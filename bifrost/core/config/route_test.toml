@@ -1,0 +1,33 @@
+[[route]]
+id = "operation-gateway-admin"
+url = "lb://operation-gateway-admin"
+mathPath = "^/api/operation-gateway-admin"
+
+[[route.filters]]
+name = "demoFilter1"
+
+[route.filters.arg]
+maxAttempts = "3"
+minAttempts = "1"
+
+[[route.filters]]
+name = "demoFilter2"
+
+[[route.filters]]
+name = "demoFilter3"
+
+[[route]]
+id = "operation-gateway-admin1"
+url = "lb://operation-gateway-admin1"
+mathPath = "^/api/operation-gateway-admin1"
+
+[[route.filters]]
+name = "demoFilter1"
+
+[route.filters.arg]
+maxAttempts = "3"
+minAttempts = "1"
+
+[[filters]]
+name = "demoFilter2"
+
