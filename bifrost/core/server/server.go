@@ -1,10 +1,9 @@
 package server
 
 import (
-	"fmt"
+	log "github.com/go-kratos/kratos/pkg/log"
 	"learn_code_go/bifrost/core/config"
 	"learn_code_go/bifrost/core/route"
-	"log"
 	"net/http"
 	"time"
 )
@@ -17,11 +16,11 @@ func listen(port string) {
 		WriteTimeout:   10 * time.Second,
 		MaxHeaderBytes: 1 << 20,
 	}
-	log.Fatal(s.ListenAndServe())
+	s.ListenAndServe()
 }
 func Init(port string, routeRepo *route.RouteRepo, routeConfigs config.RouteConfigs) {
 	http.Handle("/", &GateWayRequestHandler{RouteRepo: routeRepo, RoutesConfig: routeConfigs})
-	fmt.Println("service starting.listen on " + port)
+	log.Info("service starting.listen on " + port)
 	//必须放到最后执行
 	listen(port)
 }

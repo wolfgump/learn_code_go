@@ -1,13 +1,14 @@
 package server
 
 import (
-	"fmt"
+
 	"html"
 	"learn_code_go/bifrost/core/config"
 	"learn_code_go/bifrost/core/filter"
 	"learn_code_go/bifrost/core/route"
 	"net/http"
 	"regexp"
+	log "github.com/go-kratos/kratos/pkg/log"
 )
 
 type GateWayRequestHandler struct {
@@ -16,14 +17,14 @@ type GateWayRequestHandler struct {
 }
 
 func (g GateWayRequestHandler) ServeHTTP(writer http.ResponseWriter, request *http.Request) {
-	fmt.Printf( "Hello, %q \n", html.EscapeString(request.URL.Path))
+	log.Info( "Hello, %q \n", html.EscapeString(request.URL.Path))
 
 	matchedRoute,matchedRouteConfig := findMatchRoute(g.RouteRepo, g.RoutesConfig, request.URL.Path)
 
 	if matchedRoute == nil {
-		fmt.Printf("match none route,please check your path or connect admin configure route for you  \n")
+		log.Info("match none route,please check your path or connect admin configure route for you  \n")
 	} else {
-		fmt.Printf("Match route:%q \n", matchedRoute.Id)
+		log.Info("Match route:%q \n", matchedRoute.Id)
 		ctx := &filter.FilterContext{ResponseWriter: writer, Request: request, RouteConfig: matchedRouteConfig}
 		filter.RunChain(matchedRoute.Filters, ctx)
 	}
