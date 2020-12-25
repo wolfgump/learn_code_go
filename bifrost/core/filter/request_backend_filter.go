@@ -1,7 +1,7 @@
 package filter
 
 import (
-	"fmt"
+	log "github.com/go-kratos/kratos/pkg/log"
 	"io/ioutil"
 	"net/http"
 	"time"
@@ -21,29 +21,23 @@ func (r RequestBackendFilter) Order() int {
 
 func (r RequestBackendFilter) DoFilter(ctx *FilterContext) {
 
-	if "GET" == ctx.Request.Method {
-		client := http.Client{}
-		client.Timeout = time.Millisecond * time.Duration(10*1000)
-		request, _ := http.NewRequest(http.MethodGet, ctx.finalPath, nil)
-		request.Header = ctx.Request.Header
-		resp, errDo := client.Do(request)
+	client := http.Client{}
+	client.Timeout = time.Millisecond * time.Duration(10*1000)
+	request, _ := http.NewRequest(http.MethodGet, ctx.finalPath, ctx.Request.Body)
+	request.Header = ctx.Request.Header
+	resp, errDo := client.Do(request)
 
-		if errDo != nil {
-			fmt.Printf("request backend error,message:" + errDo.Error())
-		}
-		bytes, _ := ioutil.ReadAll(resp.Body)
-		headers := ctx.ResponseWriter.Header()
-		for key, _ := range resp.Header {
-			headers.Set(key, resp.Header.Get(key))
-		}
-		ctx.ResponseWriter.Write(bytes)
-		//result := string(bytes)
-		defer resp.Body.Close()
-
+	if errDo != nil {
+		log.Error("request backend error,message:" + errDo.Error())
 	}
-	if "POST" == ctx.Request.Method {
-
+	bytes, _ := ioutil.ReadAll(resp.Body)
+	headers := ctx.ResponseWriter.Header()
+	for key, _ := range resp.Header {
+		headers.Set(key, resp.Header.Get(key))
 	}
+	ctx.ResponseWriter.Write(bytes)
+	//result := string(bytes)
+	defer resp.Body.Close()
 }
 
 var _ IFilter = (*RequestBackendFilter)(nil)
